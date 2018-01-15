@@ -23,6 +23,8 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
+USE_NINJA := false
+
 ifneq ($(filter gta2slte,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)

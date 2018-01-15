@@ -39,8 +39,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
+TARGET_PREBUILT_KERNEL := device/samsung/gta2slte/kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/gta2slte/mkbootimg.mk
 # TARGET_KERNEL_SOURCE := kernel/samsung/gta2slte
 # TARGET_KERNEL_ARCH := arm
 # TARGET_KERNEL_HEADER_ARCH := arm
@@ -52,7 +52,7 @@ BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --board SRPQC10A000RU --dt device/samsung/GTA2SLTE/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --board SRPQC10A000RU --dt device/samsung/gta2slte/dt.img
 
 
 # Encryption
@@ -75,7 +75,7 @@ RECOVERY_VARIANT := twrp
 TARGET_OTA_ASSERT_DEVICE := gta2slte
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
+# TARGET_USERIMAGES_USE_F2FS := true
 
 
 # TWRP Configuration
