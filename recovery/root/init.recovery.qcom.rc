@@ -1,16 +1,24 @@
-on fs
-    # Needed to make qseecomd work in recovery
-    chmod 0777 /dev/qseecom
-    chmod 0664 /dev/ion
+on init
+    wait /dev/ion
+    wait /dev/qseecom
+
     chown system system /dev/ion
+    chown system drmrpc /dev/qseecom
 
-on property:ro.crypto.state=encrypted
-    start sbinqseecomd
+    start qseecomd
+    
+    start qfintverify
+    # Set permissions for persist partition
+    mkdir /persist 0771 system system
 
-# Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
-service sbinqseecomd /sbin/qseecomd
-    oneshot
+    mkdir /preload 0771 system system
+
+    export EXTERNAL_STORAGE /sdcard
+
+    # Support legacy paths
+    symlink /sdcard /mnt/sdcard
+    symlink /sdcard /storage/sdcard0
+    
+service qseecomd /sbin/qseecomd
     disabled
-    user root
-    group root
 seclabel u:r:recovery:s0

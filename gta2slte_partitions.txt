@@ -1,0 +1,182 @@
+#Detailed device partition information
+
+gta2slte:/ # cat /proc/partitions
+major minor  #blocks  name
+
+   7        0      65536 loop0
+ 179        0   15388672 mmcblk0
+ 179        1        512 mmcblk0p1
+ 179        2        512 mmcblk0p2
+ 179        3         32 mmcblk0p3
+ 179        4         32 mmcblk0p4
+ 179        5       2048 mmcblk0p5
+ 179        6        512 mmcblk0p6
+ 179        7       2048 mmcblk0p7
+ 179        8        512 mmcblk0p8
+ 179        9        256 mmcblk0p9
+ 179       10       3072 mmcblk0p10
+ 179       11         16 mmcblk0p11
+ 179       12        512 mmcblk0p12
+ 179       13        256 mmcblk0p13
+ 179       14        256 mmcblk0p14
+ 179       15        512 mmcblk0p15
+ 179       16        256 mmcblk0p16
+ 179       17        256 mmcblk0p17
+ 179       18        688 mmcblk0p18
+ 179       19       3072 mmcblk0p19
+ 179       20       3072 mmcblk0p20
+ 179       21      10240 mmcblk0p21
+ 179       22      14336 mmcblk0p22
+ 179       23      32768 mmcblk0p23
+ 179       24      32768 mmcblk0p24
+ 179       25       7168 mmcblk0p25
+ 179       26       5121 mmcblk0p26
+ 179       27       6139 mmcblk0p27
+ 179       28       3072 mmcblk0p28
+ 179       29          8 mmcblk0p29
+ 179       30      32768 mmcblk0p30
+ 179       31        512 mmcblk0p31
+ 259        0       4096 mmcblk0p32
+ 259        1        512 mmcblk0p33
+ 259        2         32 mmcblk0p34
+ 259        3        512 mmcblk0p35
+ 259        4        256 mmcblk0p36
+ 259        5         64 mmcblk0p37
+ 259        6       1024 mmcblk0p38
+ 259        7         64 mmcblk0p39
+ 259        8       4096 mmcblk0p40
+ 259        9      16384 mmcblk0p41
+ 259       10      93788 mmcblk0p42
+ 259       11      28672 mmcblk0p43
+ 259       12       2560 mmcblk0p44
+ 259       13    3588096 mmcblk0p45
+ 259       14     307200 mmcblk0p46
+ 259       15      61440 mmcblk0p47
+ 259       16   11112428 mmcblk0p48
+ 179       32      16384 mmcblk0rpmb
+ 252        0    1048576 vnswap0
+ 179       64   15273984 mmcblk1
+ 179       65   15269888 mmcblk1p1
+ 253        0   11112412 dm-0
+
+gta2slte:/ # ls -l /dev/block/platform/soc/7824900.sdhci/by-name/            
+total 0
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 aboot -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 apdp -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 apnhlos -> /dev/block/mmcblk0p43
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 backup -> /dev/block/mmcblk0p27
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 boot -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 bota -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 cache -> /dev/block/mmcblk0p46
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 cmnlib -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 cmnlib64 -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 config -> /dev/block/mmcblk0p34
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 ddr -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 devcfg -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 dip -> /dev/block/mmcblk0p38
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 dpo -> /dev/block/mmcblk0p36
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 dsp -> /dev/block/mmcblk0p41
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 efs -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 fota -> /dev/block/mmcblk0p26
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 fsc -> /dev/block/mmcblk0p28
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 fsg -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 hidden -> /dev/block/mmcblk0p47
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 hyp -> /dev/block/mmcblk0p8
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 keymaster -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 keystore -> /dev/block/mmcblk0p33
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 limits -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 lksecapp -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 mcfg -> /dev/block/mmcblk0p40
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 mdsap -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 mdtp -> /dev/block/mmcblk0p37
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 modem -> /dev/block/mmcblk0p42
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 modemst1 -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 modemst2 -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 mota -> /dev/block/mmcblk0p35
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 oem -> /dev/block/mmcblk0p39
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 pad -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 param -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 persist -> /dev/block/mmcblk0p30
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 persistent -> /dev/block/mmcblk0p31
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 recovery -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 reserved2 -> /dev/block/mmcblk0p44
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 rpm -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 sbl1 -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 sbl1bak -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 sec -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 ssd -> /dev/block/mmcblk0p29
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 steady -> /dev/block/mmcblk0p32
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 system -> /dev/block/mmcblk0p45
+lrwxrwxrwx 1 root root 20 2010-02-10 06:20 tz -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root 21 2010-02-10 06:20 userdata -> /dev/block/mmcblk0p48
+
+gta2slte:/ # parted /dev/block/mmcblk0 print                                 
+Model: MMC AJTD4R (sd/mmc)
+Disk /dev/block/mmcblk0: 15.8GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+
+Number  Start   End     Size    File system  Name        Flags
+ 1      4194kB  4719kB  524kB                sbl1
+ 2      4719kB  5243kB  524kB                sbl1bak
+ 3      5243kB  5276kB  32.8kB               ddr
+ 4      5276kB  5308kB  32.8kB               limits
+ 5      5308kB  7406kB  2097kB               aboot
+ 6      7406kB  7930kB  524kB                rpm
+ 7      7930kB  10.0MB  2097kB               tz
+ 8      10.0MB  10.6MB  524kB                hyp
+ 9      10.6MB  10.8MB  262kB                devcfg
+10      10.8MB  14.0MB  3146kB               fsg
+11      14.0MB  14.0MB  16.4kB               sec
+12      14.0MB  14.5MB  524kB                keymaster
+13      14.5MB  14.8MB  262kB                cmnlib
+14      14.8MB  15.0MB  262kB                cmnlib64
+15      15.0MB  15.5MB  524kB                lksecapp
+16      15.5MB  15.8MB  262kB                apdp
+17      15.8MB  16.1MB  262kB                mdsap
+18      16.1MB  16.8MB  705kB                pad
+19      16.8MB  19.9MB  3146kB               modemst1
+20      19.9MB  23.1MB  3146kB               modemst2
+21      23.1MB  33.6MB  10.5MB               param
+22      33.6MB  48.2MB  14.7MB  ext4         efs
+23      48.2MB  81.8MB  33.6MB               boot
+24      81.8MB  115MB   33.6MB               recovery
+25      115MB   123MB   7340kB               bota
+26      123MB   128MB   5244kB               fota
+27      128MB   134MB   6286kB               backup
+28      134MB   137MB   3146kB               fsc
+29      137MB   137MB   8192B                ssd
+30      137MB   171MB   33.6MB  ext4         persist
+31      171MB   171MB   524kB                persistent
+32      171MB   176MB   4194kB               steady
+33      176MB   176MB   524kB                keystore
+34      176MB   176MB   32.8kB               config
+35      176MB   177MB   524kB                mota
+36      177MB   177MB   262kB                dpo
+37      177MB   177MB   65.5kB               mdtp
+38      177MB   178MB   1049kB               dip
+39      178MB   178MB   65.5kB               oem
+40      178MB   182MB   4194kB               mcfg
+41      182MB   199MB   16.8MB  ext4         dsp
+42      199MB   295MB   96.0MB  fat16        modem
+43      295MB   325MB   29.4MB               apnhlos
+44      325MB   327MB   2621kB               reserved2
+45      327MB   4001MB  3674MB  ext4         system
+46      4001MB  4316MB  315MB   ext4         cache
+47      4316MB  4379MB  62.9MB  ext4         hidden
+48      4379MB  15.8GB  11.4GB               userdata
+
+
+gta2slte:/ # blkid
+/dev/block/loop0: UUID="57f8f4bc-abf4-655f-bf67-946fc0f9f25b" TYPE="ext4" 
+/dev/block/mmcblk0p22: UUID="57f8f4bc-abf4-655f-bf67-946fc0f9f25b" TYPE="ext4" 
+/dev/block/mmcblk0p30: UUID="57f8f4bc-abf4-655f-bf67-946fc0f9f25b" TYPE="ext4" 
+/dev/block/mmcblk0p41: LABEL="dsp" UUID="af32c008-2a39-7e5b-a5dc-201456d93103" TYPE="ext4" 
+/dev/block/mmcblk0p42: SEC_TYPE="msdos" UUID="00BC-614E" TYPE="vfat" 
+/dev/block/mmcblk0p43: SEC_TYPE="msdos" UUID="00BC-614E" TYPE="vfat" 
+/dev/block/mmcblk0p45: UUID="57f8f4bc-abf4-655f-bf67-946fc0f9f25b" TYPE="ext4" 
+/dev/block/mmcblk0p46: UUID="57f8f4bc-abf4-655f-bf67-946fc0f9f25b" TYPE="ext4" 
+/dev/block/mmcblk0p47: UUID="57f8f4bc-abf4-655f-bf67-946fc0f9f25b" TYPE="ext4" 
+/dev/block/vnswap0: LABEL="swap" UUID="b19377ca-7847-4917-e5f4-8f9ee546b7c1" TYPE="swap" 
+/dev/block/mmcblk1p1: UUID="0403-0201" TYPE="vfat"
+
