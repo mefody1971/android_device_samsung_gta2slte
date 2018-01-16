@@ -1,2 +1,0 @@
-ro.hardware.keystore=msm8937
-persist.sys.usb.config=mtp,adb
