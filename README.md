@@ -1,6 +1,6 @@
 TeamWin Recovery Project
 
-Device configuration for Samsung GalaxyTab A 8 LTE (2017)  _gta2slte_)
+Configuration for Samsung GalaxyTab A 8 LTE (2017)  (_gta2slte_)
 ======================================================================
 
 Basic   | Spec Sheet
