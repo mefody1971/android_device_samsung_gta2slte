@@ -19,4 +19,4 @@ Rear Camera  | 8.0 MP, autofocus, LED flash
 Front Camera | 5.0 MP
 Release Date | October 2017
 
-![Samsung GalaxyTab A 8 LTE](https://b.radikal.ru/b29/1712/4c/307cb3da7d81.png "Samsung GalaxyTab A 8 LTE")
+![Samsung GalaxyTab A 8 LTE (2017)](https://b.radikal.ru/b29/1712/4c/307cb3da7d81.png "Samsung GalaxyTab A 8 LTE (2017)")
